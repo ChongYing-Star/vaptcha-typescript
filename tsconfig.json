@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "es6",
+    "target": "es2020",
+    "allowJs": false,
+    "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "types": ["node", "jest"],
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.test.*",
+    "**/__mocks__/*",
+    "**/__tests__/*",
+  ],
+  "include": [
+    "index.ts",
+    "src/*",
+  ],
+}
