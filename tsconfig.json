@@ -7,7 +7,7 @@
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
-    "types": ["node", "jest"],
+    "types": ["node"],
   },
   "exclude": [
     "node_modules",
