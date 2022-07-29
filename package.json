@@ -1,5 +1,5 @@
 {
-  "name": "@chongying/vaptcha-typescript",
+  "name": "@chongying-star/vaptcha-typescript",
   "version": "0.1.0",
   "description": "",
   "main": "./dist/index.js",
