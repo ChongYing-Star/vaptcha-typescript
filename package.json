@@ -1,7 +1,7 @@
 {
   "name": "@chongying-star/vaptcha-typescript",
   "version": "0.1.0",
-  "description": "",
+  "description": "为Vaptcha提供在TypeScript中开发的良好体验。包括类型标注、功能二次封装等。",
   "main": "./dist/index.js",
   "scripts": {
     "test": "jest",
@@ -12,8 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/ChongYing-Star/vaptcha-typescript.git"
   },
-  "author": "",
+  "author": "TM-SunnyDay <sunnyday@chongying.studio> (https://github.com/TM-SunnyDay/)",
   "license": "MIT",
+  "keywords": [
+    "vaptcha",
+    "typescript"
+  ],
   "bugs": {
     "url": "https://github.com/ChongYing-Star/vaptcha-typescript/issues"
   },
