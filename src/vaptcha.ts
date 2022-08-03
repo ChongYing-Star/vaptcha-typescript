@@ -24,7 +24,7 @@ interface VaptchaServerToken {
   server: string,
 }
 
-declare class Vaptcha {
+declare interface Vaptcha {
   /**
    * 仅供点击式、嵌入式使用。
    * 执行初始化操作，将按钮或者图片插入到配置参数中的容器中去。
