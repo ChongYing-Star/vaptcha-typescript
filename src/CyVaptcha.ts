@@ -1,5 +1,6 @@
 import { CyVaptchaConfig } from './config';
-import { CyVaptchaEventName } from './types';
+import type { CompleteVaptcha } from './types';
+import type { VaptchaEventName } from './vaptcha';
 
 /**
  * 再封装的Vaptcha类
@@ -14,19 +15,18 @@ export default class CyVaptcha implements CompleteVaptcha {
     this.vaptcha = vaptcha;
   }
 
+  /** @deprecated 官方文档未提供 */
   get token () {
     return this.vaptcha.token;
   }
+  /** @deprecated 官方文档未提供 */
   get server () {
     return this.vaptcha.server;
-  }
-  get tip () {
-    return this.vaptcha.tip;
   }
   render () {
     return this.vaptcha.render();
   }
-  listen (eventName: CyVaptchaEventName, callback: () => any) {
+  listen (eventName: VaptchaEventName, callback: () => any) {
     return this.vaptcha.listen(eventName, callback);
   }
   validate () {
