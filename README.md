@@ -91,9 +91,11 @@ createVaptcha({
 
 配置项
 
+**属性：**
+
 - `immediateRender`
-  - type: `boolean`
-  - default: `true` *当为`true`且模式为点击式和嵌入式时，自动调用`render`方法*
+    - type: `boolean`
+    - default: `true` *当为`true`且模式为点击式和嵌入式时，自动调用`render`方法*
 
 ### Function `createVaptcha`
 
@@ -102,9 +104,9 @@ createVaptcha({
 **参数：**
 
 1. `option` Vaptcha配置项
-  - type: `VaptchaOption`
+    - type: `VaptchaOption`
 2. `CyVaptchaType` 目标类型构造函数
-  - type: 构造函数
-  - default: `undefined` *当为`undefined`时构造函数为`CyVaptcha`*
+    - type: 构造函数
+    - default: `undefined` *当为`undefined`时构造函数为`CyVaptcha`*
 3. `overrideConfig` 自定义覆盖配置
-  - type: [`CyVaptchaConfig`](#type-cyvaptchaconfig)
+    - type: [`CyVaptchaConfig`](#type-cyvaptchaconfig)
