@@ -1,4 +1,4 @@
-export const cyVaptchaDefaultConfig = {
+const cyVaptchaDefaultConfig = {
   'immediateRender': true,
 };
 const cyVaptchaConfig = { ...cyVaptchaDefaultConfig };

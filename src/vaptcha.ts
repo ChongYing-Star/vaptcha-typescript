@@ -10,8 +10,7 @@ export interface VaptchaBaseOption {
   area?: 'auto' | 'sea' | 'na' | 'cn',
 }
 
-/** Vaptcha点击式参数 */
-export interface VaptchaOptionClickType {
+interface VaptchaOptionClickType_Extends {
   /** 验证器模式：点击式(click)、隐藏式(invisible)、嵌入式(embedded) */
   mode: 'click',
   /** 容器元素或容器元素选择器；适用类型：点击式、嵌入式 */
@@ -21,15 +20,17 @@ export interface VaptchaOptionClickType {
   /** 按钮颜色：默认`#57ABFF`；适用类型：点击式 */
   color?: string,
 }
+/** Vaptcha点击式参数 */
+export type VaptchaOptionClickType = VaptchaBaseOption & VaptchaOptionClickType_Extends;
 
-/** Vaptcha隐藏式参数 */
-export interface VaptchaOptionInvisibleType {
+interface VaptchaOptionInvisibleType_Extends {
   /** 验证器模式：点击式(click)、隐藏式(invisible)、嵌入式(embedded) */
   mode: 'invisible',
 }
+/** Vaptcha隐藏式参数 */
+export type VaptchaOptionInvisibleType = VaptchaBaseOption & VaptchaOptionInvisibleType_Extends;
 
-/** Vaptcha嵌入式参数 */
-export interface VaptchaOptionEmbeddedType {
+interface VaptchaOptionEmbeddedType_Extends {
   /** 验证器模式：点击式(click)、隐藏式(invisible)、嵌入式(embedded) */
   mode: 'embedded',
   /** 容器元素或容器元素选择器；适用类型：点击式、嵌入式 */
@@ -37,10 +38,10 @@ export interface VaptchaOptionEmbeddedType {
   /** 是否在嵌入式图片底部显示操作提示文字：默认true；适用类型：嵌入式	 */
   guide?: boolean,
 }
+/** Vaptcha嵌入式参数 */
+export type VaptchaOptionEmbeddedType = VaptchaBaseOption & VaptchaOptionEmbeddedType_Extends;
 
-type VaptchaTypeOption = VaptchaOptionClickType | VaptchaOptionInvisibleType | VaptchaOptionEmbeddedType;
-
-export type VaptchaOption = VaptchaBaseOption & VaptchaTypeOption;
+export type VaptchaOption = VaptchaOptionClickType | VaptchaOptionInvisibleType | VaptchaOptionEmbeddedType;
 
 export interface VaptchaServerToken {
   token: string,
