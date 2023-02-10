@@ -109,3 +109,6 @@ typings/
 .eslintignore
 .eslintrc.js
 jest.config.ts
+
+.vscode/
+src/
