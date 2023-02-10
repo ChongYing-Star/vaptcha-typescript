@@ -3,6 +3,7 @@ export {
 } from './vaptcha';
 
 export type {
+  GlobalFunction,
   Vaptcha,
   VaptchaOption,
   VaptchaOptionClickType,

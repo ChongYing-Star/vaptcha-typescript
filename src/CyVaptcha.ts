@@ -8,7 +8,7 @@ import type { VaptchaEventName } from './vaptcha';
  */
 export default class CyVaptcha implements CompleteVaptcha {
   protected readonly config;
-  public vaptcha;
+  public readonly vaptcha;
 
   constructor (vaptcha: CompleteVaptcha, config: Readonly<Partial<CyVaptchaConfig>>) {
     this.config = config;
