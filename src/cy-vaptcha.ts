@@ -1,7 +1,7 @@
-import { CompleteVaptcha } from './types';
-import { config as defaultConfig, CyVaptchaConfig } from './config';
-import CyVaptcha from './CyVaptcha';
-import type { VaptchaOption, GlobalFunction } from './vaptcha';
+import { CompleteVaptcha } from './types.js';
+import { config as defaultConfig, CyVaptchaConfig } from './config.js';
+import CyVaptcha from './CyVaptcha.js';
+import type { VaptchaOption, GlobalFunction } from './vaptcha.js';
 export {
   CyVaptcha,
 };

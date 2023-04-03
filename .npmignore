@@ -102,14 +102,6 @@ typings/
 # TernJS port file
 .tern-port
 
-# 去除没必要发布的文件
-**/*.test.*
-**/__mocks__/*
-**/__tests__/*
-.eslintignore
-.eslintrc.js
-jest.config.ts
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -123,3 +115,11 @@ jest.config.ts
 
 # Source code
 src/
+
+# 去除没必要发布的文件
+**/*.test.*
+**/__mocks__/*
+**/__tests__/*
+.eslintignore
+.eslintrc.js
+jest.config.ts

@@ -1,3 +1,5 @@
+<!-- cSpell:words instanceof -->
+
 # Vaptcha TypeScript
 
 _✨ 为Vaptcha提供在TypeScript中开发的良好体验。 ✨_
@@ -34,7 +36,7 @@ window.vaptcha({
 ```
 ```typescript
 import { GlobalFunction } from '@chongying-star/vaptcha-typescript';
-((<any>window).vaptcha as GlobalFunction)({
+((window as any).vaptcha as GlobalFunction)({
   vid: '...'
 }).then((obj) => {});
 ```

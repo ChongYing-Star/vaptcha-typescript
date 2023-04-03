@@ -1,6 +1,6 @@
-import { CyVaptchaConfig } from './config';
-import type { CompleteVaptcha } from './types';
-import type { VaptchaEventName } from './vaptcha';
+import { CyVaptchaConfig } from './config.js';
+import type { CompleteVaptcha } from './types.js';
+import type { VaptchaEventName } from './vaptcha.js';
 
 /**
  * 再封装的Vaptcha类

@@ -1,4 +1,4 @@
-import type { Vaptcha } from './vaptcha';
+import type { Vaptcha } from './vaptcha.js';
 
 export interface CompleteVaptcha extends Vaptcha {
   /**

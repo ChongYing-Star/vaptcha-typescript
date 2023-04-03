@@ -1,6 +1,6 @@
 export {
   default,
-} from './vaptcha';
+} from './vaptcha.js';
 
 export type {
   GlobalFunction,
@@ -11,13 +11,13 @@ export type {
   VaptchaOptionEmbeddedType,
   VaptchaEventName,
   VaptchaServerToken,
-} from './vaptcha';
+} from './vaptcha.js';
 
 export {
   CyVaptcha,
   createVaptcha,
-} from './cy-vaptcha';
+} from './cy-vaptcha.js';
 
 export {
   defineCyVaptchaConfig,
-} from './config';
+} from './config.js';

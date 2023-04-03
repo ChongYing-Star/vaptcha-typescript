@@ -84,4 +84,4 @@ export interface Vaptcha {
 
 export type GlobalFunction = (option: VaptchaOption) => Promise<Vaptcha>;
 
-export default ((...args) => (<any>window).vaptcha(...args)) as GlobalFunction;
+export default ((...args) => (window as any).vaptcha(...args)) as GlobalFunction;
