@@ -10,8 +10,8 @@ export default class CyVaptcha implements CompleteVaptcha {
   protected readonly config;
   public readonly vaptcha;
 
-  constructor (vaptcha: CompleteVaptcha, config: Readonly<Partial<CyVaptchaConfig>>) {
-    this.config = config;
+  constructor (vaptcha: CompleteVaptcha, config?: Readonly<Partial<CyVaptchaConfig>>) {
+    this.config = { ...config };
     this.vaptcha = vaptcha;
   }
 

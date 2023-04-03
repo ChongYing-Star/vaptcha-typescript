@@ -110,5 +110,5 @@ createVaptcha({
 2. `CyVaptchaType` 目标类型构造函数
     - type: 构造函数
     - default: `undefined` *当为`undefined`时构造函数为`CyVaptcha`*
-3. `overrideConfig` 自定义覆盖配置
+3. `overwriteConfig` 自定义覆盖配置
     - type: [`CyVaptchaConfig`](#type-cyvaptchaconfig)

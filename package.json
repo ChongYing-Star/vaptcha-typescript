@@ -6,8 +6,10 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "scripts": {
-    "lint": "eslint . --ext .ts",
-    "build": "tsc -p tsconfig.prod.json"
+    "build": "tsc -p tsconfig.prod.json",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
@@ -27,8 +29,11 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
+    "@vitest/coverage-c8": "0.29.8",
     "eslint": "latest",
+    "jsdom": "21.1.1",
     "ts-node": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vitest": "0.29.8"
   }
 }
