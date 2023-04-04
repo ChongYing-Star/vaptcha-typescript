@@ -1,6 +1,6 @@
 {
   "name": "@chongying-star/vaptcha-typescript",
-  "version": "1.1.0-bate.1",
+  "version": "1.1.0-beta.0",
   "description": "为Vaptcha提供在TypeScript中开发的良好体验。包括类型标注、功能二次封装等。",
   "type": "module",
   "main": "./dist/index.js",
