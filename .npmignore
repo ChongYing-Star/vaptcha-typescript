@@ -122,4 +122,6 @@ src/
 **/__tests__/*
 .eslintignore
 .eslintrc.js
+.eslintrc.cjs
 jest.config.ts
+vitest.config.ts
